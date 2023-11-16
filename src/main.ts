@@ -1,6 +1,21 @@
 
 console.log('Hi');
 
+// Types vs Interfaces
+// Types can be used with any type
+// Interfaces can be only used with objects
+
+type Person = {
+  name: string;
+  age: number
+}
+
+type Count = number
+
+interface Animal {
+  species: string
+}
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     
