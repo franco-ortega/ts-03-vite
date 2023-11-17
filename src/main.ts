@@ -5,7 +5,7 @@ console.log('Hi');
 // Types can be used with any type
 // Interfaces can be only used with objects
 
-type Person = {
+type PersonType = {
   name: string;
   age: number
 }
