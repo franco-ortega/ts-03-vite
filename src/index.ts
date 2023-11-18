@@ -32,12 +32,19 @@ const b: PeopleGroupedByName = {
 }
 
 // index with typeof
+const list = ["sack", "green", false];
+
+type ListType = (typeof list);
+
+
 const c = {
   name: "Franco",
   age: 45
 }
 
 type C = (typeof c)[keyof typeof c]
+
+type nameOfPerson = (typeof c)["name"];
 
 const d = {
   name: "Anna",
