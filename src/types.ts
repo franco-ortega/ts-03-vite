@@ -4,7 +4,8 @@
 
 export type Person = {
   name: string;
-  age: number
+  age: number;
+  isProgrammer?: boolean;
 }
 
 
