@@ -34,8 +34,10 @@ const b: PeopleGroupedByName = {
 // index with typeof
 const list = ["sack", "green", false];
 
+// gets the type of the list array
 type ListType = (typeof list);
 
+// gets the types of items in the list array
 type ListItemType = (typeof list)[number];
 
 
@@ -44,8 +46,10 @@ const c = {
   age: 45
 }
 
+// gets the types of all keys (property values) in "c"
 type C = (typeof c)[keyof typeof c]
 
+// gets the type of the "name" property, and that type is a string
 type nameOfPerson = (typeof c)["name"];
 
 const d = {
@@ -54,4 +58,5 @@ const d = {
   isProgrammer: true
 }
 
+// gets the types of all keys in "d"
 type D = (typeof d)[keyof typeof d]
