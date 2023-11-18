@@ -34,7 +34,7 @@ const b: PeopleGroupedByName = {
 // index with typeof
 const list = ["sack", "green", false];
 
-type ListType = (typeof list);
+type ListType = (typeof list)[number];
 
 
 const c = {
